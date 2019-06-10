@@ -6,11 +6,15 @@ const CardList = ( {robots} ) => {
     const robotCardArray = robots.map( (user, index) => {
         return (
             <RobotCard 
-            keyIndex = {index}
+            key = {index}
             id={robots[index].id} 
             name={robots[index].name} 
+            username={robots[index].username}
+            phone={robots[index].phone}
+            website={robots[index].website}
             email={robots[index].email}
-        />)
+            />
+        )
     }) 
 
     return (
